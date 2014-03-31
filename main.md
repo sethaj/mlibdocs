@@ -11,13 +11,11 @@ Please edit/rework/delete anything here as you see fit. This is a ''very rough d
 * [Ruby Tutorial](ruby-tutorial.md) - Albert
 * [Rails Tutorial](rails-tutorial.md) - Albert
 * [Git Tutorial](git-tutorial.md) - Phil
-
 * [Ruby Documentation](ruby-documentation.md) - Bill
 * [Ruby Testing](ruby-testing.md) - Seth
 * [Ruby Templating](ruby-templating.md) - Seth
 * [Persistence Layer](persistence-layer.md) - ?
 * [Recommended Development Environment](recommended-development-environment.md)
-
 * [Configuration](configuration.md)
 
 ## Getting Dirty
