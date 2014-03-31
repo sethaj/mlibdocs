@@ -18,21 +18,21 @@ exec $SHELL
 ~~~
 
 
-<source lang="bash">
+~~~ bash
 mkdir -p ~/.rbenv/plugins
 cd ~/.rbenv/plugins
 git clone git://github.com/sstephenson/ruby-build.git
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 exec $SHELL
-</source>
+~~~ 
 
 I also had to repeat some of those for my .bash_profile.  I used to know when each would be included, but the differences elude me now.  I seem to recall that .bashrc is for non-interactive sessions.  I'm sure the manpage for bash has that information, but that's not what this page is about.
 
-<source lang="bash">
+~~~ bash
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profile
-</source>
+~~~
 
 Not necessarily part of ruby, but needed later to get the mysql2 gem.  This package wasn't included in ubuntu by default:
 
