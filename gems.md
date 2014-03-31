@@ -103,11 +103,13 @@ Dependencies really start adding up. There are also a few superfluous gems that 
 ## Local Gems
 
 Create a [Gemfile](http://gembundler.com/gemfile.html)
-(more on this)
+
+~~~ bash
  export GEM_PATH=~/gems
  bundler install --path=$GEM_PATH
  git add gemfile
  git add gemfile.lock
+~~~
 
 ## Signed Gems
 
@@ -120,13 +122,12 @@ For gems we may want to host ourselves.
 
 [Chapter 18](http://www.techsoftcomputing.com/rubygems/read/chapter/18.html)
 
-<blockquote>
-... is is also fairly easy to serve gems from static files on an existing web server. Here’s what you need to do.
-
-Create a directory in the public files area of your web server (we will call that directory BASEDIR in the following instructions).
-Create the subdirectory BASEDIR/gems.
-Copy any gems you wish to serve into the BASEDIR/gems subdirectory.
-Run the generate_index gem command in order to generate the yaml and yaml.Z files needed by the RubyGems client. The command will look something like this:
-gem generate_index -d BASEDIR
-That’s it. The URL for the server will be whatever URL references BASEDIR_. Just rerun the @generateindex@ gem command whenever you add (or remove) gems from the server.
-</blockquote>
+> ... it is also fairly east to serve gems from static files on an existing web server. Here's what you need to do.
+>
+> Create a directory in the public files area of your web server (we will call that directory `BASEDIR` in the following instructions). \\
+> Create the subdirectory `BASEDIR/gems`. \\
+> Copy any gems you wish to serve into the `BASEDIR/gems` subdirectory. \\
+> Run the `gem generate_index` command in order to generate the `yaml` and `yaml.Z` files needed by the RubyGems client. The command will look something like this: \\
+> `gem generate_index -d BASEDIR`
+>
+> That's it. The URL for the server will be whatever URL references `BASEDIR`. Just rerun the `gem generate_index` command whenever you add (or remove) gems from the server.
