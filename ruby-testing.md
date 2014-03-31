@@ -27,7 +27,7 @@ Your testing code should be written in the spec/ directory. There are [quite](ht
 
 ### Configuring
 
-This section is about RSpec for unit and integration testing using BDD. This is sometimes referred to as “fail-implement-pass”, or even expanded to “red-green-refactor” to include a refactoring stage.
+This section is about RSpec for unit and integration testing using BDD. This is sometimes referred to as "fail-implement-pass", or even expanded to "red-green-refactor" to include a refactoring stage.
 
 To use RSpec, you need the rspec-rails gem in your Gemfile:
 
@@ -38,7 +38,7 @@ group :development, :test do
 end
 ~~~
 
-Additionally, you’ll probably want to add Capybara (for adding web interaction and natural language to your tests):
+Additionally, you'll probably want to add Capybara (for adding web interaction and natural language to your tests):
 
 ~~~ ruby
 group :test do
@@ -102,7 +102,7 @@ The following examples are from Chapter 18 (RSpec) of The Rails 3 Way (Fernandez
 
 ~~~ ruby
 expect {
-  BlogPost.create :title => ‘Hello’
+  BlogPost.create :title => 'Hello'
 }.to change { BlogPost.count }.by(1)
 
 expect {
@@ -118,14 +118,14 @@ end
 
 describe BlogPost do
   subject do # Explicit subject
-    blog_post = BlogPost.new :title => ‘foo’, :body => ‘bar’
+    blog_post = BlogPost.new :title => 'foo', :body => 'bar'
     blog_post.publish!
     blog_post
   end
   it { should be_valid }
   its(:errors) { should be_empty }
-  its(:title)  { should == ‘foo’}
-  its(:body)   { should == ‘bar’ }
+  its(:title)  { should == 'foo'}
+  its(:body)   { should == 'bar' }
   its(:published_on) { should == Date.today }
 end
 ~~~
@@ -133,7 +133,7 @@ end
 Using pending to prevent failing code from failing (interestingly, will cause error if the code no longer causes a failure):
 
 ~~~ ruby
-pending “implementation of new rating algorithm” do
+pending "$implementation of new rating algorithm" do
   BlogPost.new.rating.should == 3.0
 end
 ~~~
@@ -142,7 +142,7 @@ Expectation matchers for Enumerable objects:
 
 ~~~ ruby
 [1, 2, 3].should include(1)
-“foobar”.should include(“bar”)
+"foobar".should include("bar")
 [1, 2, 3].should have(3).items # Yikes.
 schedule.should have(3).days   # Syntax sugar => schedule.days.should have(3).items
 ~~~
@@ -154,9 +154,9 @@ schedule.should have(3).days   # Syntax sugar => schedule.days.should have(3).it
 The describe and it messages should form a sentence. E.g., the following example generates two sentences:
 
 ~~~ ruby
-describe “the homepage shows”
-  it “register link when not logged in”
-  it “account statistics when logged in”
+describe "the homepage shows"
+  it "register link when not logged in"
+  it "account statistics when logged in"
 end
 ~~~
 
