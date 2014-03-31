@@ -10,20 +10,20 @@ You should be here if you're an experienced software developer who is new to rub
 We'll be using [rbenv](https://github.com/sstephenson/rbenv) in development and I presume production, so if you want a similar setup we recommend the same.  Either there's differences between system wide versions of rbenv and local versions, or differences between the 0.2.0 that Ubuntu provides and the 0.3.0 that you can get from github, but I ended up installing the version from github, following hints from [https://gist.github.com/2627011 this gist].
 
 ~~~ bash
-cd
-git clone git://github.com/sstephenson/rbenv.git .rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-exec $SHELL
+ cd
+ git clone git://github.com/sstephenson/rbenv.git .rbenv
+ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+ exec $SHELL
 ~~~
 
 
 ~~~ bash
-mkdir -p ~/.rbenv/plugins
-cd ~/.rbenv/plugins
-git clone git://github.com/sstephenson/ruby-build.git
-echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-exec $SHELL
+ mkdir -p ~/.rbenv/plugins
+ cd ~/.rbenv/plugins
+ git clone git://github.com/sstephenson/ruby-build.git
+ echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+ exec $SHELL
 ~~~ 
 
 I also had to repeat some of those for my .bash_profile.  I used to know when each would be included, but the differences elude me now.  I seem to recall that .bashrc is for non-interactive sessions.  I'm sure the manpage for bash has that information, but that's not what this page is about.
