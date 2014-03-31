@@ -36,23 +36,23 @@ echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profil
 
 Not necessarily part of ruby, but needed later to get the mysql2 gem.  This package wasn't included in ubuntu by default:
 
-<source lang="bash">
+~~~ bash
 apt-get install libmysqlclient-dev
-</source>
+~~~
 
 
-<source lang="bash">
+~~~ bash
 rbenv install 1.9.3-p194
 rbenv global 1.9.3-p194
 ruby -v
 gem install rails
 gem install mysql2 
-</source>
+~~~
 
 
-=Introductions from other languages=
+## Introductions from other languages
 
-[http://www.ruby-lang.org/en/documentation/ruby-from-other-languages/ ruby-lang.org's introduction] might be a bit light on details if you want to jump into code right after reading, but it covers a broad spectrum of topics.
+[ruby-lang.org's introduction](http://www.ruby-lang.org/en/documentation/ruby-from-other-languages/) might be a bit light on details if you want to jump into code right after reading, but it covers a broad spectrum of topics.
 
 [http://www.ruby-doc.org/docs/ProgrammingRuby/html/index.html The Programming Ruby book] is a little old by now.  The scope and the tone seem ideal though.  This version covers version 1.6.  But there is a 2nd (1.8) and 3rd (1.9) edition available for purchase.
 
