@@ -68,7 +68,7 @@ I was somewhat confused by all those `:identifier` things I saw in the ruby code
 
 ### Variables
 
-Unlike PHP or PERL, Ruby doesn't have to prefix variables with $ or @ for the parser to recognize them as a variable.  Ruby does have that as an option, though, to indicate scope:
+Unlike PHP or PERL, Ruby doesn't have to prefix variables with `$` or `@` for the parser to recognize them as a variable.  Ruby does have that as an option, though, to indicate scope:
 
 > Although `$` and `@` are used as the first character in variable names sometimes, rather than indicating type, they indicate scope (`$` for globals, `@` for object instance, and `@@` for class attributes).
 
@@ -80,13 +80,13 @@ There's a nice overview on variables at [RunPaint.org](http://ruby.runpaint.org/
 
 Blocks are used a little differently in Ruby than I've encountered in other languages.  They are enclosed with `do ... end` or `{ ... }` which is pretty standard.  Inside a block things work like you might expect in other languages regarding variable scoping and flow control, but there's an extra feature in that you can implicitly associate a block with a function call.  I say implicitly because the block isn't passed in the argument list, but is on the same line after the argument list.
 
-[http://rubylearning.com/satishtalim/ruby_blocks.html RubyLearning.com's Ruby Blocks page] helped me come to my current understanding of how blocks work in Ruby
+[RubyLearning.com's Ruby Blocks page](http://rubylearning.com/satishtalim/ruby_blocks.html) helped me come to my current understanding of how blocks work in Ruby.
 
-==Branching
+### Branching
 
 You can get standard conditional statements:
 
-<source lang="ruby">
+~~~ ruby
 if ...
   x 
 elsif ... 
@@ -94,36 +94,39 @@ elsif ...
 else 
   z
 end
+~~~
 
 
+
+~~~ ruby
 unless ... 
   x
 else
   y
 end
-</source>
+~~~
 
 There's also an inline form:
 
-<source lang="ruby">
+~~~ ruby
 if ... then x
 elsif ... then y
 else z
 end
-</source>
+~~~
 
 And postfix conditionals:
 
-<source lang="ruby">
+~~~ ruby
 x if ...
 x unless ...
-</source>
+~~~
 
-And instead of switch ... case ... default, you get case ... when ... then ... else.
+And instead of `switch ... case ... default`, you get `case ... when ... then ... else ... end`.
 
-[http://ruby.runpaint.org/flow RunPaint] has more examples in their chapter on flow control.
+[RunPaint](http://ruby.runpaint.org/flow) has more examples in their chapter on flow control.
 
-==Loops
+### Loops
 
 Before I understood how blocks worked, I thought Ruby had really strange and specialized loop syntax.  You'll see things like:
 
@@ -168,7 +171,7 @@ for element in x .. y
 end
 ~~~
 
-[http://ruby.runpaint.org/flow RunPaint] has a lot more to say.
+[RunPaint](http://ruby.runpaint.org/flow)  has a lot more to say.
 
 ### Functions
 
