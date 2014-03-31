@@ -54,30 +54,29 @@ gem install mysql2
 
 [ruby-lang.org's introduction](http://www.ruby-lang.org/en/documentation/ruby-from-other-languages/) might be a bit light on details if you want to jump into code right after reading, but it covers a broad spectrum of topics.
 
-[http://www.ruby-doc.org/docs/ProgrammingRuby/html/index.html The Programming Ruby book] is a little old by now.  The scope and the tone seem ideal though.  This version covers version 1.6.  But there is a 2nd (1.8) and 3rd (1.9) edition available for purchase.
+[The Programming Ruby book](http://www.ruby-doc.org/docs/ProgrammingRuby/html/index.html The Programming Ruby book) is a little old by now.  The scope and the tone seem ideal though.  This version covers version 1.6.  But there is a 2nd (1.8) and 3rd (1.9) edition available for purchase.
 
-[http://www.learnrubyandrails.com/ Learn Ruby and Rails] (Link suggested by Bill)
+[Learn Ruby and Rails](http://www.learnrubyandrails.com/) (Link suggested by Bill)
 
-[http://www.techotopia.com/index.php/Ruby_Essentials Technotopia Ruby Essentials] Far too many ads for my taste, but it had quick answers to my earliest questions.
+[Technotopia Ruby Essentials](http://www.techotopia.com/index.php/Ruby_Essentials) Far too many ads for my taste, but it had quick answers to my earliest questions.
 
-=Language Concepts=
+## Language Concepts
 
 
-==Symbols==
-I was somewhat confused by all those :identifier things I saw in the ruby code I picked up.  I don't recall seeing anything like them in the simple perl I used, and I'm pretty sure PHP doesn't do anything like it.  Looks like they're [http://www.troubleshooters.com/codecorn/ruby/symbols.htm  symbols], I found this explanation quite handy.
+### Symbols
+I was somewhat confused by all those `:identifier` things I saw in the ruby code I picked up.  I don't recall seeing anything like them in the simple perl I used, and I'm pretty sure PHP doesn't do anything like it.  Looks like they're [symbols](http://www.troubleshooters.com/codecorn/ruby/symbols.htm), I found this explanation quite handy.
 
-==Variables==
+### Variables
 
 Unlike PHP or PERL, Ruby doesn't have to prefix variables with $ or @ for the parser to recognize them as a variable.  Ruby does have that as an option, though, to indicate scope:
 
-<blockquote>
-Although $ and @ are used as the first character in variable names sometimes, rather than indicating type, they indicate scope ($ for globals, @ for object instance, and @@ for class attributes).
-</blockquote>
-[http://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-perl/ Qute from: "To Ruby from Perl" ]
+> Although $ and @ are used as the first character in variable names sometimes, rather than indicating type, they indicate scope ($ for globals, @ for object instance, and @@ for class attributes).
 
-There's a nice overview on variables at [http://ruby.runpaint.org/variables RunPaint.org].
+[Quote from: "To Ruby from Perl"](http://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-perl/)
 
-==Blocks==
+There's a nice overview on variables at [RunPaint.org](http://ruby.runpaint.org/variables RunPaint.org).
+
+### Blocks
 
 Blocks are used a little differently in Ruby than I've encountered in other languages.  They are enclosed with do ... end or { ... } which is pretty standard.  Inside a block things work like you might expect in other languages regarding variable scoping and flow control, but there's an extra feature in that you can implicitly associate a block with a function call.  I say implicitly because the block isn't passed in the argument list, but is on the same line after the argument list.
 
