@@ -7,7 +7,7 @@ You should be here if you're an experienced software developer who is new to rub
 
 ### On My Ubuntu 12.04 Desktop
 
-We'll be using [https://github.com/sstephenson/rbenv rbenv] in development and I presume production, so if you want a similar setup we recommend the same.  Either there's differences between system wide versions of rbenv and local versions, or differences between the 0.2.0 that Ubuntu provides and the 0.3.0 that you can get from github, but I ended up installing the version from github, following hints from [https://gist.github.com/2627011 this gist].
+We'll be using [rbenv](https://github.com/sstephenson/rbenv) in development and I presume production, so if you want a similar setup we recommend the same.  Either there's differences between system wide versions of rbenv and local versions, or differences between the 0.2.0 that Ubuntu provides and the 0.3.0 that you can get from github, but I ended up installing the version from github, following hints from [https://gist.github.com/2627011 this gist].
 
 ~~~ bash
 cd
