@@ -62,7 +62,7 @@ Rake the file:
 
 ~~~ bash
   $ rake db:seed
-~~~ bash
+~~~
 
 See also:  [RailsCasts seed data](http://railscasts.com/episodes/179-seed-data)
 
@@ -74,6 +74,7 @@ Active Record is the defaul Rails Object-Relational Mapper (ORM).  Fundamentally
 For example, the scaffold generator listed in the section above created a table called `members`, and a class named Member. The class definition is as follows:
 
 `/app/models/member.rb`
+
 ~~~ ruby
   class Member < ActiveRecord::Base
     attr_accessible :member_id, :member_name
@@ -83,6 +84,7 @@ For example, the scaffold generator listed in the section above created a table 
 The members table itself is defined by the following migration:
 
 `/db/migrate/20121023164711_create_members.rb`
+
 ~~~ ruby
   class CreateMembers < ActiveRecord::Migration
     def change
