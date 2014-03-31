@@ -7,7 +7,7 @@ Here are a few additions to make things easier to read:
 
 ### Files and IO
 
-When possible, pass a block to ''File#open'' or ''File#new'' -- the file will automatically be closed at the end of the block.
+When possible, pass a block to `File#open` or `File#new` -- the file will automatically be closed at the end of the block.
 
 ~~~ ruby
   File.open('myfile.txt') do |f|
@@ -38,11 +38,11 @@ When possible, pass a block to ''File#open'' or ''File#new'' -- the file will au
 Use exceptions only for something exceptional!
       
 
-#### Always use the three-argument option for ''raise''
+#### Always use the three-argument option for `raise`
 
-Most of the time you'll see ''raise MyException'' by itself. There are two additional (optional) arguments: a value, and a backtrace object.
+Most of the time you'll see `raise MyException` by itself. There are two additional (optional) arguments: a value, and a backtrace object.
 
-JRuby takes a long time to generate a backtrace. Instead, pass it explicitly as ''nil''
+JRuby takes a long time to generate a backtrace. Instead, pass it explicitly as `nil`
 
 
 ~~~ ruby
