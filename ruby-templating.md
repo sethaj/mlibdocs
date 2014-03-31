@@ -40,13 +40,13 @@ Sass = highly recommended '''unless you are using...'''
 
 ## Bootstrap
 
-Twitter's freely available and Apache licensed Bootstrap [http://twitter.github.com/bootstrap/] is a html/css/js framework that can give you sane defaults to help you get your project off the ground quickly and without being too ugly. Add ‘twitter-bootstrap-rails’ to your Gemfile in the :assets group and <code>bundle install</code> as usual to get started. Then:
+Twitter's freely available and Apache licensed Bootstrap [http://twitter.github.com/bootstrap/] is a html/css/js framework that can give you sane defaults to help you get your project off the ground quickly and without being too ugly. Add 'twitter-bootstrap-rails' to your Gemfile in the :assets group and <code>bundle install</code> as usual to get started. Then:
 
 ~~~ bash
 $ rails g bootstrap:install
 ~~~
 
-* Customize your layout file (apps/views/layouts/application.layout.haml). See the Bootstrap grid documentation [http://twitter.github.com/bootstrap/scaffolding.html] for details.
+* Customize your layout file `apps/views/layouts/application.layout.haml`. See the [Bootstrap grid documentation](http://twitter.github.com/bootstrap/scaffolding.html) for details.
 * Add the following to your head to use the response features:
    `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 * Take advantage of [Twitter Components](http://twitter.github.com/bootstrap/components.html) and [JavaScript](http://twitter.github.com/bootstrap/javascript.html) functionality.

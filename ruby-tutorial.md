@@ -62,7 +62,6 @@ gem install mysql2
 
 ## Language Concepts
 
-
 ### Symbols
 I was somewhat confused by all those `:identifier` things I saw in the ruby code I picked up.  I don't recall seeing anything like them in the simple perl I used, and I'm pretty sure PHP doesn't do anything like it.  Looks like they're [symbols](http://www.troubleshooters.com/codecorn/ruby/symbols.htm), I found this explanation quite handy.
 
@@ -141,6 +140,7 @@ The `do ... end` is a block being passed to the `upto` function.  The [Integer#u
 You still get the standard looping structues: `while`, `until`, and `for` though:
 
 While:
+
 ~~~ ruby
 while condition
 ...
