@@ -26,6 +26,7 @@ Please edit/rework/delete anything here as you see fit. This is a ''very rough d
 * [Gems](gems.md)
 * [Hosting environment/Web stack](hosting-environment.md)
 * [Deployment](deployment.md) - Ryan
+* [Sample Deploy with Sinatra](sinatra-with-torquebox-on-punch.md) - Seth
 * [Middleware](middleware.md)
 * Common [Gotchas](gotchas.md)
 * [Debuggers](debuggers.md)
