@@ -15,8 +15,9 @@ Please edit/rework/delete anything here as you see fit. This is a ''very rough d
 * [Ruby Testing](ruby-testing.md) - Seth
 * [Ruby Templating](ruby-templating.md) - Seth
 * [Persistence Layer](persistence-layer.md) - ?
-* [Recommended Development Environment](recommended-development-environment.md)
+* [Development Environment](development-environment.md)
 * [Configuration](configuration.md)
+* [Hosting environment/Web stack](hosting-environment.md)
 
 ## Getting Dirty
 
@@ -24,7 +25,6 @@ Please edit/rework/delete anything here as you see fit. This is a ''very rough d
 
 * [Style Guide](style.md)
 * [Gems](gems.md)
-* [Hosting environment/Web stack](hosting-environment.md)
 * [Deployment](deployment.md) - Ryan
 * [Sample Deploy with Sinatra](sinatra-with-torquebox-on-punch.md) - Seth
 * [Middleware](middleware.md)

@@ -8,7 +8,8 @@
 * We use [git](git-tutorial.md) for versioning
 
 ## Dev Servers
-Some comment here? Maybe we don't need this section, but I think something more needs to be said.
+You will have a development sandbox on one or more dev servers that mirrors the production environment you are targeting
+(i.e., dev.www.lib.umich.edu, dev.quod.lib.umich.edu, dev.babel.hathitrust.org). 
 
 ----
 All software packages listed here (as well as [Gems](gems.md)?) are installed/maintained by Core Services. These will be kept up to date, generally to the most current stable version. Keeping around legacy versions will be explicitly avoided, don't count on them.
