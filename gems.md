@@ -1,3 +1,16 @@
+We have a communal [gemserver](gemserver.md) available for locally developed gems.
+
+# Locally developed gems
+### lit
+For the support of common tasks or infrastructure.
+* lit - base gem
+* lit/rack - a collection of rack support gems
+* lit/rack/env - rack middleware layer for modifying the env variable in config.ru.
+* lit/rack/remote_user - rack middleware layer for pulling the remote user from the servlet request into the env variable.
+* lit/rack/access_control - rack middleware layer for providing access control.
+* lit/tasks/gem - Rake task for lit:release to push a .gem file to a local gemserver.
+
+# Old document
 We still need to decide how exactly Gems will be managed. Points we are shooting for are:
 * Use [Bundler][http://gembundler.com) to manage gem version requirements.
 * Don't depend on exact gem versions where possible.
