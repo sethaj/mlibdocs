@@ -1,8 +1,8 @@
-We have a Geminabox-based gemserver at http://gems.www.lib.umich.edu.
+We have a [Geminabox-based gemserver](http://gems.www.lib.umich.edu).
 
 ## Access control to the gemserver
 
-Access control is layered for access to the gem server.
+Access control is layered.
 
 * Layer 1: Apache front-end acl (i.e. libauth).
   * Unauthenticated access is granted to the .43 subnet, development and production servers.
