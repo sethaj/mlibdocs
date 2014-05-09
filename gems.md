@@ -13,11 +13,14 @@ For the support of common tasks or infrastructure.
 * lit/rack/access_control - rack middleware layer for providing access control.
 * lit/tasks/gem - Rake task for lit:release to push a .gem file to a local gemserver.
 
+Prospective task:
+* lit/tasks/sign - Rake task for signing gems
+
 # Old document
 
 We still need to decide how exactly Gems will be managed. Points we are shooting for are:
 
-* Use [Bundler][http://gembundler.com) to manage gem version requirements.
+* Use [Bundler](http://gembundler.com) to manage gem version requirements.
 * Don't depend on exact gem versions where possible.
 * Install gems in your dev space (how?!) for evaluation purposes.
 * Contact [Core Services](mailto:lit-cs-sysadmin@umich.edu) to request system wide installation of new gems ''before'' [deploying](deploying.md) the code that needs the gem.
