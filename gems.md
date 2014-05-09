@@ -15,7 +15,7 @@ Prospective task:
 
 * lit/tasks/sign - Rake task for signing gems
 
-### Singular
+### singular
 
 For supporting single-sign-on in Rails.
 
