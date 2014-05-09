@@ -14,6 +14,7 @@ For the support of common tasks or infrastructure.
 * lit/tasks/gem - Rake task for lit:release to push a .gem file to a local gemserver.
 
 Prospective task:
+
 * lit/tasks/sign - Rake task for signing gems
 
 # Old document
