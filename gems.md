@@ -1,7 +1,5 @@
 We have a communal [gemserver](gemserver.md) available for locally developed gems.
 
-# Locally developed gems
-
 ### lit
 
 For the support of common tasks or infrastructure.
@@ -16,6 +14,10 @@ For the support of common tasks or infrastructure.
 Prospective task:
 
 * lit/tasks/sign - Rake task for signing gems
+
+### Singular
+
+For supporting single-sign-on in Rails.
 
 # Old document
 
