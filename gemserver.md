@@ -30,6 +30,17 @@ source 'http://gems.www.lib.umich.edu'
 
 ## Pushing to the gemserver from a rake task:
 
+Gemfile:
+
+~~~ ruby
+source 'https://rubygems.org'
+source 'http://gems.www.lib.umich.edu'
+
+groups :development, :test do
+  gem 'lit'
+end
+~~~
+
 Rakefile:
 
 ~~~ ruby
@@ -45,7 +56,12 @@ rake build        # Build <gemname>-<version>.gem into the pkg directory
 rake install      # Build and install <gemname>-<version>.gem into system gems
 rake lit:release  # Release to the lit gemserver
 rake release      # Create tag v<version> and build and push <gemname>-<version>.gem to...
-$ LIT_GEMSERVER=http://gems.www.lib.umich.edu bundle exec rake lit:release
+$ export LIT_GEMSERVER=http://gems.www.lib.umich.edu
+$ bundle exec rake lit:release
 <gemname> <version> built to pkg/<gemname>-<version>.gem.
 ... some status message ...
 ~~~
+
+## Theming
+
+The gemserver is a stock geminabox install, with an alternative views folder.
