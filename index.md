@@ -1,5 +1,37 @@
 Main page for The Ruby on Rails Documentation and Best Practices group
 
+## The new stuff is here:
+
+What do we need to document for rails?
+
+### What is our ruby environment like?
+
+We use [rbenv](https://github.com/sstephenson/rbenv) to manage different ruby version.
+We use [bundler](http://bundler.io/) to manage gems.
+We keep [mri](https://www.ruby-lang.org/en/) + [jruby](http://jruby.org/) on the servers.
+
+### What is our ruby web environment like?
+
+We serve rails apps out of [Torquebox](http://torquebox.org/) behind an apache reverse proxy.
+If you configure the right context, your app will be available.
+For your purposes, Torquebox lives in /l/local/torquebox.
+
+### What about local/shared code or infrastructure?
+
+We have a [gemserver](http://gems.www.lib.umich.edu) for locally hosted gems.
+Access control is layered; IP-only or cosign/ldap.
+
+### What are the recommended gems to use to implement feature X?
+
+html templating: [slim](http://slim-lang.com)?
+css frameworking: [sass](http://sass-lang.com)
+
+Anything else?
+
+
+## The old stuff is below this point
+## vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
 ## Documentation for Ruby/JRuby/RoR @ MLibrary
 
 Please edit/rework/delete anything here as you see fit. This is a ''very rough draft''. None of this is official either (yet). Don't quote it.
