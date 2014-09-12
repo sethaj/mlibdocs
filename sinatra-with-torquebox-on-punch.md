@@ -1,9 +1,9 @@
 
 Create directory
 ----------------
-```cd /htapps/sethajoh.babel
-mkdir -p testapp/sinatra_test
-cd testapp/sinatra_test```
+    cd /htapps/sethajoh.babel
+    mkdir -p testapp/sinatra_test
+    cd testapp/sinatra_test
 
 Create app.rb
 -------------
@@ -44,10 +44,10 @@ Create the knob file (sethajoh_test_project-knob.yml)
     application:
       root: /htapps/sethajoh.babel/testapp/sinatra_test
     environment:
-    RAILS_ENV: {}
-    RAILS_RELATIVE_URL_ROOT: /
+      RAILS_ENV: {}
+      RAILS_RELATIVE_URL_ROOT: /
     web:
-    context: /tb/htapps/sethajoh.babel/testapp
+      context: /tb/htapps/sethajoh.babel/testapp
 
 I don't think it matters what the knob file is called, as long as it's in the
 format `*-knob.yml`. 
