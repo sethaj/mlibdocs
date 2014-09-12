@@ -27,7 +27,7 @@ Create Gemfile
 
 Run Bundle install
 ------------------
-`bundle install --path .bundle --binstubs`
+    bundle install --path .bundle --binstubs
 
 Test that sinatra is working
 ----------------------------
@@ -36,7 +36,7 @@ Test that sinatra is working
 
 Go to deployments
 -----------------
-`cd /l/local/torquebox/deployments`
+    cd /l/local/torquebox/deployments
 
 Create the knob file (sethajoh_test_project-knob.yml)
 -----------------------------------------------------
@@ -58,7 +58,7 @@ host they can use for torquebox apps.
 
 Create the dodeploy file
 ------------------------
-`touch sethajoh_test_project-knob.yml.dodeploy`
+    touch sethajoh_test_project-knob.yml.dodeploy
 
 Verify deployment, you should see a file called `sethajoh_test_project-knob.yml.deploy`
 after a few seconds.
@@ -77,6 +77,6 @@ That's it.
 
 To undeploy
 -----------
-`rm sethajoh_test_project-knob.yml.deploy`
+    rm sethajoh_test_project-knob.yml.deploy
 
 
