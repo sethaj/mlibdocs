@@ -7,23 +7,23 @@ cd testapp/sinatra_test```
 
 Create app.rb
 -------------
-```require 'sinatra/base'
+    require 'sinatra/base'
 
-class MyApp < Sinatra::Base
-  get '/' do
-    'Hello world!'
-  end
-end```
+    class MyApp < Sinatra::Base
+      get '/' do
+        'Hello world!'
+      end
+    end
 
 Create config.ru
 ----------------
-```require './app'
-run MyApp```
+    require './app'
+    run MyApp
 
 Create Gemfile
 --------------
-```source 'https://rubygems.org'
-gem 'sinatra'```
+    source 'https://rubygems.org'
+    gem 'sinatra'
 
 Run Bundle install
 ------------------
@@ -31,8 +31,8 @@ Run Bundle install
 
 Test that sinatra is working
 ----------------------------
-```bin/rackup
-`^C```
+    bin/rackup
+    ^C
 
 Go to deployments
 -----------------
@@ -40,14 +40,14 @@ Go to deployments
 
 Create the knob file (sethajoh_test_project-knob.yml)
 -----------------------------------------------------
-```---
-application:
-  root: /htapps/sethajoh.babel/testapp/sinatra_test
-environment:
-  RAILS_ENV: {}
-  RAILS_RELATIVE_URL_ROOT: /
-web:
-  context: /tb/htapps/sethajoh.babel/testapp```
+    ---
+    application:
+      root: /htapps/sethajoh.babel/testapp/sinatra_test
+    environment:
+    RAILS_ENV: {}
+    RAILS_RELATIVE_URL_ROOT: /
+    web:
+    context: /tb/htapps/sethajoh.babel/testapp
 
 I don't think it matters what the knob file is called, as long as it's in the
 format `*-knob.yml`. 
