@@ -1,5 +1,5 @@
 
-```yaml
+~~~ yaml
 # dueberb-sipleapp-knob.yml
 #
 # By local convention, name your -knob file with the form
@@ -34,4 +34,4 @@ web:
   # The all-important contenxt. URLs assocaited with this contenxt will
   # be mapped to the application defined in this -knobfile.
   context: /tb/www-dev/dueberb.mirlyn.lib/testapp/
-```
+~~~
