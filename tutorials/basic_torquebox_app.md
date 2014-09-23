@@ -13,19 +13,19 @@ Our entire application will consist of three files:
 * `simpleapp.rb`, the main sinatra file
 * and a `config.ru` file, which holds configuration information that dictates how the application is started and served.
 
-```ruby
+~~~ ruby
 # Gemfile
 source 'https://rubygems.org' # universal rubygem repo
 source 'http://gems.www.lib.umich.edu' # our local rubgems repo
 
 gem 'sinatra'
-```
+~~~
 
 We only need one depndancy for something this simple: the `sinatra` gem.
 
 Now, we set it up to do something.
 
-```ruby
+~~~ ruby
 # simpleapp.rb
 
 require 'sinatra/base'
@@ -35,18 +35,18 @@ class SimpleApp < Sinatra::Base
     "Hello world!"
   end
 end
-```
+~~~
 
 And finally, the `config.ru`
 
-```ruby
+~~~ ruby
 # config.ru
 require_relative 'simpleapp.rb'
 
 map '/' do      # Map simpleapp at the root
   run SimpleApp
 end
-```
+~~~
 
 If you put these three files in a directory and run `bundle install --path .bundle` followed by `rackup`, you'll get a local web server that will serve up the text 'Hello World' when you hit the root URL.
 
@@ -81,7 +81,7 @@ Torquebox is controlled by the creation and deletion of files in `/l/local/torqu
 
 The [torquebox documentation of the knobfile](http://torquebox.org/builds/LATEST/html-docs/deployment-descriptors.html) isn't a whole lot more illuminating than this sample file.
 
-```yaml
+~~~ yaml
 # dueberb-sipleapp-knob.yml
 #
 # By local convention, name your -knob file with the form
@@ -116,7 +116,7 @@ web:
   # The all-important contenxt. URLs assocaited with this contenxt will
   # be mapped to the application defined in this -knobfile.
   context: /tb/www-dev/dueberb.mirlyn.lib/testapp/
-```
+~~~
 
 
 ## Step 4. Deploy, test, and undeploy
@@ -151,13 +151,13 @@ Remember, you need to:
 
 A simple bash script that ssh's into each machine in turn might look like:
 
-```bash
+~~~ bash
 for i in stout riesling chianti doppel;
 do
   ssh $i "rm /l/local/torquebox/deployments/dueberb-mirlyn-api-knob.yml.deployed;
   sleep 4;
   touch /l/local/torquebox/deployments/dueberb-mirlyn-api-knob.yml.dodeploy"; done
-```
+~~~
 
 ## And...
 
