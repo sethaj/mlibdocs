@@ -1,6 +1,6 @@
 
 ~~~ yaml
-# dueberb-sipleapp-knob.yml
+# dueberb-simpleapp-knob.yml
 #
 # By local convention, name your -knob file with the form
 #    <uniqname>-<appname>-knob.yml

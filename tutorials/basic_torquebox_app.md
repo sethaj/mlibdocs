@@ -82,7 +82,7 @@ Torquebox is controlled by the creation and deletion of files in `/l/local/torqu
 The [torquebox documentation of the knobfile](http://torquebox.org/builds/LATEST/html-docs/deployment-descriptors.html) isn't a whole lot more illuminating than this sample file.
 
 ~~~ yaml
-# dueberb-sipleapp-knob.yml
+# dueberb-simpleapp-knob.yml
 #
 # By local convention, name your -knob file with the form
 #    <uniqname>-<appname>-knob.yml
