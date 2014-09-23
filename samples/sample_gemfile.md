@@ -1,3 +1,5 @@
+A sample Gemfile. Note that sourcing the local gemserver comes *last*.
+
 ```ruby
 source 'https://rubygems.org'
 source 'http://gems.www.lib.umich.edu'
