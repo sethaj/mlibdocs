@@ -9,7 +9,7 @@ We keep [mri](https://www.ruby-lang.org/en/) on the dev servers as well for deve
 We manage ruby verisons with [rbenv](http://rbenv.org).
 
 ### Get Started
-[Making a new app.](basic_torquebox_app.md)
+[Making a new app.](tutorials/basic_torquebox_app.md)
 
 ## Local reference works
 
