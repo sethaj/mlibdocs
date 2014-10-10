@@ -21,6 +21,8 @@
 
 * A [sample gemfile](samples/sample_gemfile.md) which specifies dependencies for a basic sinatra application that uses a mix of local gems and gems from rubygems.org.
 
+TODO: Move this section
+
 ## Picking a local ruby environment (using rbenv)
 
 *Current production ruby is JRuby-1.7x*

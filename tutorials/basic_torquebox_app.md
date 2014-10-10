@@ -52,6 +52,8 @@ If you put these three files in a directory and run `bundle install --path .bund
 
 ## Step 1. Get a *context* from LIT Core Services
 
+Most developers already have a "test" context like `/tb/www-dev/dueberb.mirlyn.lib/testapp`.
+
 Our setup involves the normal Apache server forwarding certain requests to the local Torquebox instance. For this to work, Core Services needs to set up a *context* -- a unique id (that so happens to look like a directory path) that is used to identify URLs that need redirecting to Torquebox.
 
 A *context* might look like:
@@ -59,8 +61,6 @@ A *context* might look like:
     /tb/www-dev/dueberb.mirlyn.lib/testapp
 
 Again, note that while it *looks* like a directory, it's not. By local convention, though, you can determine that any requests to `http://dueberb.mirlyn.lib.umich.edu/testapp/` will be forwarded to Torquebox for further processing.
-
-Most developers already have a "test" context like the one above. If you don't, ask Core Services to mint you one.
 
 ## Step 2. Get your code on a test server (malt or punch)
 
@@ -152,11 +152,11 @@ Remember, you need to:
 A simple bash script that ssh's into each machine in turn might look like:
 
 ~~~ bash
-for i in stout riesling chianti doppel;
+# Example from 10/10/2014.  There's talk of putting server names in a list somewhere.
+for i in stout doppel pilsner riesling chianti asti brut ;
 do
-  ssh $i "rm /l/local/torquebox/deployments/dueberb-mirlyn-api-knob.yml.deployed;
-  sleep 4;
-  touch /l/local/torquebox/deployments/dueberb-mirlyn-api-knob.yml.dodeploy"; done
+  ssh $i "touch /l/local/torquebox/deployments/dueberb-mirlyn-api-knob.yml.dodeploy"
+done
 ~~~
 
 ## And...
