@@ -2,11 +2,10 @@
 
 ### Environment Overview
 
-We use [rbenv](https://github.com/sstephenson/rbenv) to manage different ruby version.
-We use [bundler](http://bundler.io/) to manage gems.
-We use the [jruby](http://jruby.org/) ruby implimentation hosted on the [TorqueBox](http://torquebox.org) application server behind an [apache](http://httpd.apache.org) reverse proxy.
-We keep [mri](https://www.ruby-lang.org/en/) on the dev servers as well for development/debugging purposes.
-We manage ruby verisons with [rbenv](http://rbenv.org).
+* We use [bundler](http://bundler.io/) to manage gems.
+* We use the [jruby](http://jruby.org/) ruby implimentation hosted on the [TorqueBox](http://torquebox.org) application server behind an [apache](http://httpd.apache.org) reverse proxy.
+* We keep [mri](https://www.ruby-lang.org/en/) on the dev servers as well for development/debugging purposes.
+* We manage ruby verisons with [rbenv](http://rbenv.org).
 
 ### Get Started
 [Making a new app.](tutorials/basic_torquebox_app.md)
