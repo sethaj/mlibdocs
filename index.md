@@ -21,11 +21,10 @@
 
 * A [sample gemfile](samples/sample_gemfile.md) which specifies dependencies for a basic sinatra application that uses a mix of local gems and gems from rubygems.org.
 
-TODO: Move this section
+## Using rbenv
 
-## Picking a local ruby environment (using rbenv)
+* [Information about our rbenv installation](rbenv.md)
 
-*Current production ruby is JRuby-1.7x*
+## Managing this site
 
-* List available ruby versions (JRuby and MRI) with `rbenv versions`
-* Choose a ruby version to use with `rbenv shell <full_version_string>` (e.g, `rbenv shell jruby-1.7.15`)
+* [Orphaned pages](orphaned-pages.md)
