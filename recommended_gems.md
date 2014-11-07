@@ -13,3 +13,4 @@
 * Testing: ???
 * JS frameworks: JQuery?
 * XML processing: Nokogiri is expected.  OGA may be relevant in the future.
+* Debugging: [pry](http://pryrepl.org/) is recommended
