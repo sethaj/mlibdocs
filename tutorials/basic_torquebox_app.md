@@ -9,6 +9,7 @@ We'll just use a very simple Sintra application that does nothing but say "hello
 You can do this on your local machine if you have a ruby installed.
 
 Our entire application will consist of three files:
+
 * a `Gemfile` which lists all the application's depedencies
 * `simpleapp.rb`, the main sinatra file
 * and a `config.ru` file, which holds configuration information that dictates how the application is started and served.
