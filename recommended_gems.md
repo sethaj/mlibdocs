@@ -10,8 +10,8 @@
    Carrierwave: 
    Can Fedora do this for us?
 * Existing CSS frameworks:
-   Currently either Foundation or Bootstrap BUT please consult with the accessibility specialist in Library Web Systems about which features can be used safely (example: we do not want anyone using icon fonts for accessibility reasons).
-   Eventually our own internal framework, Falafel, will be the prefered choice.
+    * Currently either Foundation or Bootstrap BUT please consult with the accessibility specialist in Library Web Systems about which features can be used safely (example: we do not want anyone using icon fonts for accessibility reasons).
+    * Eventually our own internal framework, Falafel, will be the prefered choice.
 * Testing: ???
 * JS frameworks: JQuery (eventually it will be JQuery + Falafel, our internal front-end framework)
 * XML processing: Nokogiri is expected.  OGA may be relevant in the future.
