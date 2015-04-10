@@ -5,6 +5,8 @@
 * authorization: [pundit](https://github.com/elabs/pundit)
 * authentication: [sorcery](http://rubygems.org/gems/sorcery)
 * single sign on: [singular](http://gems.www.lib.umich.edu/)
+* protection: beyond what rails does, or outside of rails
+* * csrf/xss type stuff: [rack-protection](https://github.com/sinatra/rack-protection)
 * File uploads?: Paperclip? Carrier Wave? Both look flakey.
    Paperclip: fields on a model
    Carrierwave: 
