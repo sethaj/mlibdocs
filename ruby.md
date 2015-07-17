@@ -8,6 +8,8 @@
 
 ### Get Started
 [Making a new app.](tutorials/basic_ruby_app.md)
+[Making a new hydra app](https://github.com/mlibrary/umichwrapper/wiki/Dive-into-hydra-smoke-test)
+[Rails templates](https://github.com/mlibrary/rails-templates)
 
 ### Local reference works
 
